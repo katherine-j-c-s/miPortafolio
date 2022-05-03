@@ -1,0 +1,22 @@
+/* imghvr-fade-*
+   ----------------------------- */
+   [class^="imghvr-fade"] figcaption,
+   [class*=" imghvr-fade"] figcaption {
+       opacity: 0;
+   }
+   
+   [class^="imghvr-fade"]:hover figcaption,
+   [class*=" imghvr-fade"]:hover figcaption {
+       opacity: 1;
+   }
+   
+   [class^="imghvr-fade"]:hover > img,
+   [class^="imghvr-fade"]:hover figcaption,
+   [class*=" imghvr-fade"]:hover > img,
+   [class*=" imghvr-fade"]:hover figcaption {
+       -webkit-transform: translate(0, 0);
+               transform: translate(0, 0);
+   }
+   
+   /* imghvr-fade
+      ----------------------------- */

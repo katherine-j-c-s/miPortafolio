@@ -1,0 +1,327 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+h1 {
+    font-size: 80px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: midnightblue;
+    margin: 0px;
+}
+header{
+    background: black;
+    width: 100%;
+    display: flex;
+    height: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.nav li {
+    margin: 0% 13%;
+    list-style: none;
+}
+.presentacionVideo {
+    display: block;
+    height: 25%;
+    width: 100%;
+    margin-bottom: -15%;
+    overflow: hidden;
+}
+#mivideo {
+    width: 100%;
+    height: 25%;
+}
+.presentaion {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0px;
+    justify-content: center;
+    width: 100%;
+    line-height: 3rem;
+}
+.tittlePresentaion {
+    width: 40%;
+    margin: 10%;
+}
+.infoPresentaion {
+    width: 40%;
+    margin: 10%;
+}
+.trabajoCasa {
+    display: flex;
+    position: relative;
+    height: 5%;
+    width: 100%;
+    align-items: center;
+    background: rgb(53, 5, 100);
+}
+.fotocompu {
+    width: 50%;
+}
+.fotocompu img{
+    max-width: 100%;
+    max-height: 100%;
+    height: 500px;
+}
+.trabajoCasaTexto {
+    width: 50%;
+}
+.trabajoCasaTexto h1 {
+    display: block;
+    width: 100%;
+}
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    flex-direction: row-reverse;
+}
+.fotoK {
+    width: 50%;
+}
+.fotoK img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10%;
+    height: 500px;
+    border-radius: 300px;
+}
+.infoPersonal {
+    width: 50%;
+}
+.infoPersonal h2 {
+    margin: 10%;
+}
+.infoPersonal p {
+    margin: 5% 10%;
+}
+.proyectosKaty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 36%;
+}
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.textoProyecto {
+    background: rgba(82, 31, 97, 0.521);
+    height: 550px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tamañoProyecto {
+    background-size: 48rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -10px;
+    height: 550px;
+}
+.proyecto1 {
+    background-image: url(./images/proyecto1.png);
+}
+.proyecto2 {
+    background-image: url(./images/proyecto2.PNG);
+}
+
+.proyecto3 {
+    background-image: url(./images/africansa.png);
+}
+.proyecto4y5 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.proyectoJuego {
+    background-image: url(./images/projectoJuego.PNG);
+    background-size: 26rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -10px;
+    height: 550px;
+    width: 50%;
+}
+.proyectoDibujo {
+    background-image: url(./images/projectoDibujo.PNG);
+    background-size: 26rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -10px;
+    height: 550px;
+    width: 50%;
+}
+.contacMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.container {
+    width: 40%;
+    margin: 1% 2%;
+    display: flex;
+    border-radius: 10px;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 25px;
+    }
+    *{
+        font-size: 16px;
+    }
+    .presentacionVideo {
+        margin-bottom: 100px;
+    }
+    .presentaion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tittlePresentaion {
+        width: 90%;
+        margin: 10% 5% 0%;
+    }
+    .tittlePresentaion h1 {
+        font-size: 60px;
+    }
+    .infoPresentaion {
+        padding-bottom: 100px;
+        width: 100%;
+        position: relative;
+        top: 26%;
+        margin: 0px;
+        background: black;
+    }
+    .trabajoCasa {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin: 0%;
+    }
+    .fotocompu {
+        width: 100%;
+    }
+    .fotocompu img{
+        width: 720px;
+        height: 200px;
+    }
+    .trabajoCasaTexto {
+        justify-content: center;
+        width: 100%;
+        display: grid;
+    }
+    .trabajoCasaTexto h1 {
+        display: block;
+        width: 100%;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .fotoK {
+        width: 100%;
+        display: contents;
+    }
+    .fotoK img {
+        margin: 5% 0%;
+        height: 400px;
+    }
+    .infoPersonal {
+        width: 100%;
+    }
+    .infoPersonal h2 {
+        margin: 0% 2% 5%;
+        text-align: center;
+        font-size: 40px;
+    }
+    .infoPersonal p {
+        margin: 0% 2% 5%; 
+        line-height: 40px;
+    }
+    .proyectosKaty {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 36%;
+    }
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .textoProyecto {
+        height: 400px;
+    }
+    .tamañoProyecto {
+        background-size: cover;
+        height: 400px;
+        margin: -10px;
+    }
+    .proyecto4y5 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .proyectoJuego {
+        background-size: cover;
+        height: 410px;
+    }
+    .proyectoDibujo {
+        background-size: cover;
+        height: 410px;
+    }
+    .contacMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .boxContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .container {
+        width: 46%;
+        border-radius: 34px;
+    }
+    .textContainer p {
+        font-size: 20px;
+    }
+}
+    
