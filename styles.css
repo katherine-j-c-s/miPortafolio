@@ -242,6 +242,7 @@ header:hover {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -10px;
+    overflow: hidden;
     height: 550px;
 }
 .proyecto1 {
@@ -265,6 +266,7 @@ header:hover {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -10px;
+    overflow: hidden;
     height: 550px;
     width: 50%;
 }
@@ -274,6 +276,7 @@ header:hover {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -10px;
+    overflow: hidden;
     height: 550px;
     width: 50%;
 }
@@ -472,11 +475,73 @@ header:hover {
     }
 }
 @media only screen and (max-width: 452px) {
+    .logo img {
+        height: 60px;
+        width: 65px;
+    }
+    .miPresentaion {
+        margin: 5% 0% 0% 0%;
+    }
+    .miPresentaion h1 {
+        font-size: 70px;
+    }
+    .miPresentaion .kathe {
+        font-size: 35px;
+    }
+    .miPresentaion p {
+        font-size: 30px;
+    }
+    .fotoK img {
+        height: 300px;
+        margin-bottom: 5%;
+    }
+    .skils {
+        margin: 0% 0% 10%;
+    }
+    .boxesabout {
+        margin: 0px 0px 0px -32px;
+    }
+    .boxesabout li{
+        margin: 0px 0px 0px -15px;
+    }
+    .boxes p {
+        display: none;
+    }
     .boxes {
-        width: 70px;
+        width: 90px;
     }
     .boxes img {
-        height: 70px;
-        width: 70px;
+        height: 65px;
+        width: 65px;
+    }
+    .boxes2:hover {
+        background: white;
+        box-shadow: 0px 15px 20px 9px rgba(0, 0, 0, 0);
+    }
+    .tamañoProyecto {
+        background-size: 115%;
+        height: 300px;
+    }
+    .proyectoDibujo {
+        height: 200px;
+    }
+    .proyectoJuego {
+        height: 200px;
+    }
+    .proyectoDibujo .textoProyecto {
+        height: 200px;
+    }
+    .proyectoJuego .textoProyecto {
+        height: 200px;
+    }
+    .contacMe { 
+        margin-top: -36%;
+    }
+    .textContainer a {
+        font-size: 16px;
+    }
+    .container img {
+        height: 20px;
+        width: 20px;
     }
 }
