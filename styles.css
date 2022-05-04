@@ -1,30 +1,35 @@
 *{
     font-family: 'IBM Plex Sans', sans-serif;
-    color: white;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
 }
 h1 {
-    font-size: 80px;
+    font-size: 40px;
+    color: white;
+}
+p {
+    color: white;
 }
 body{
     display: flex;
     flex-direction: column;
-    background: midnightblue;
     margin: 0px;
 }
 header{
-    background: black;
+    background: rgba(125, 61, 189, 0.342);
     width: 100%;
+    position: absolute;
     display: flex;
-    height: 5%;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    transition: all 0.5s;
+}
+header:hover {
+    background: rgb(125, 61, 189);
 }
 .logo img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
 .nav {
     display: flex;
@@ -33,67 +38,39 @@ header{
     width: 100%;
 }
 .nav li {
-    margin: 0% 13%;
-    list-style: none;
+    margin: 5%;
+    list-style: none;        
 }
-.presentacionVideo {
-    display: block;
-    height: 25%;
-    width: 100%;
-    margin-bottom: -15%;
-    overflow: hidden;
+.nav li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
 }
-#mivideo {
-    width: 100%;
-    height: 25%;
+.nav li a:hover {
+    color:black;
 }
 .presentaion {
-    display: flex;
-    position: absolute;
-    align-items: center;
+    background-image: url(./images/page-17-423-pexelsphoto90807web.jpg);
+    background-size: cover;
+    background-repeat: none;
     top: 0px;
-    justify-content: center;
-    width: 100%;
-    line-height: 3rem;
-}
-.tittlePresentaion {
-    width: 40%;
-    margin: 10%;
-}
-.infoPresentaion {
-    width: 40%;
-    margin: 10%;
-}
-.trabajoCasa {
-    display: flex;
-    position: relative;
-    height: 5%;
-    width: 100%;
-    align-items: center;
-    background: rgb(53, 5, 100);
-}
-.fotocompu {
-    width: 50%;
-}
-.fotocompu img{
-    max-width: 100%;
-    max-height: 100%;
-    height: 500px;
-}
-.trabajoCasaTexto {
-    width: 50%;
-}
-.trabajoCasaTexto h1 {
-    display: block;
     width: 100%;
 }
-.aboutMe {
+.presentaion article {
+    background-color: rgba(41, 41, 107, 0.349);
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 20%;
-    flex-direction: row-reverse;
+}
+.miPresentaion {
+    width: 40%;
+    margin: 15% 0% 10% 20%;
+}
+.kathe {
+    font-size: 30px;
 }
 .fotoK {
     width: 50%;
@@ -102,17 +79,129 @@ header{
     max-width: 100%;
     max-height: 100%;
     margin: 10%;
-    height: 500px;
+    height: 350px;
     border-radius: 300px;
+}
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0% 5%;
+}
+.aboutMe .who{
+    font-size: 40px;
+}
+.aboutMe p{
+    color: rgb(46, 44, 44);
+}
+.boxesabout {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.skils{
+    width: 100%;
+    margin-bottom: 7%;
+    color: black;
+    font-weight: bold;
+}
+.boxes {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    border-radius: 350px;
+    transition: all 0.5s;
+}
+.boxes:hover {
+    background-color: antiquewhite;
+}
+.boxes img {
+    height: 200px;
+    width: 200px;
 }
 .infoPersonal {
     width: 50%;
 }
 .infoPersonal h2 {
-    margin: 10%;
+    color: rgb(46, 44, 44);
 }
-.infoPersonal p {
-    margin: 5% 10%;
+.containerbtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.btn-descarga{
+    display: block;
+    width: 400px;
+    padding: 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(125, 61, 189);
+    transition: all 0.3s;
+}
+.btn-descarga:hover {
+    color: black;
+}
+.tittleservices {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+.tittleservices h1 {
+    color: black
+}
+.tittleservices p{
+    color: rgb(46, 44, 44);
+}
+.boxesSevices {
+    width: 97%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxes2 {
+    width: 300px;
+    height: 300x;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    border-radius: 200px;
+    transition: all 0.5s;
+}
+.boxes2:hover {
+    box-shadow: 0px 15px 20px 9px rgba(0, 0, 0, 0.164);
+}
+.boxes:hover {
+    background-color: antiquewhite;
+}
+.boxes2 h1{
+    color: black;
+    font-size: 40px;
+}
+.boxes2 p {
+    color: rgb(46, 44, 44);
+    font-size: 20px;
+}
+.boxes2 img {
+    height: 200px;
+    width: 200px;
+}
+.titleprojects h1{
+    color:black;
 }
 .proyectosKaty {
     display: flex;
@@ -127,15 +216,29 @@ header{
     width: 100%;
 }
 .textoProyecto {
-    background: rgba(82, 31, 97, 0.521);
-    height: 550px;
-    margin: 0;
+    background: rgba(38, 45, 148, 0.795);
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    height: 550px;
+    margin: 0;
+    opacity:0;
+    transition: opacity 0.3s;
+    overflow: hidden;
+}
+.textoProyecto:hover {
+    opacity: 1;
+}
+.textoProyecto p {
+    color: rgb(255, 255, 255);
+}
+.textoProyecto a {
+    color: white;
 }
 .tamañoProyecto {
-    background-size: 48rem;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -10px;
@@ -158,7 +261,7 @@ header{
 }
 .proyectoJuego {
     background-image: url(./images/projectoJuego.PNG);
-    background-size: 26rem;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -10px;
@@ -167,7 +270,7 @@ header{
 }
 .proyectoDibujo {
     background-image: url(./images/projectoDibujo.PNG);
-    background-size: 26rem;
+    background-size: 128%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: -10px;
@@ -177,12 +280,20 @@ header{
 .contacMe {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
+}
+.textContact h1 {
+    color: black;
+    margin-left: 10%;
+}
+.textContact p{
+    color: rgb(46, 44, 44);
+    margin-left: 10%;
 }
 .boxContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 5%;
 }
@@ -190,138 +301,182 @@ header{
     width: 40%;
     margin: 1% 2%;
     display: flex;
-    border-radius: 10px;
-    background-color: black;
+    border-radius: 50px;
+    padding: 7px;
+    background: rgb(124, 65, 184);
     justify-content: space-evenly;
     align-items: center;
+}
+.textContainer a{
+    text-decoration: none;
+    color: wheat;
+    transition: all 0.4s;
+}
+.textContainer a:hover {
+    color: black;
+}
+@media only screen and (max-width: 1440px) {
+    .boxes {
+        width: 200px;
+    }
+    .boxes img {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .fotoK img {
+        margin: 0%;
+    }
+    .aboutMe {    
+        width: 100%;
+        margin: 0% 0%;
+    }
+    .boxes {
+        width: 155px;
+    }
+    .boxes img {
+        height: 150px;
+        width: 150px;
+    }
 }
 @media only screen and (max-width: 768px){
     h1{
         font-size: 25px;
     }
     *{
+        text-align: center;
         font-size: 16px;
     }
-    .presentacionVideo {
-        margin-bottom: 100px;
+    header {
+        background: rgba(125, 61, 189, 0.342);
     }
-    .presentaion{
+    .nav {
+        display: none;
+    }
+    .logo {
+        margin-left: -20%;
+    }
+    .presentaion article{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .tittlePresentaion {
-        width: 90%;
-        margin: 10% 5% 0%;
+    .miPresentaion {
+        display: flex;
+        margin: 16% 0% 0% 0%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-    .tittlePresentaion h1 {
+    .miPresentaion h1 {
+        font-size: 100px;
+        margin-bottom: 0px;
+    }
+    .miPresentaion .kathe{
         font-size: 60px;
+        margin-bottom: 0px;
+        font-weight: bold;
+        color: white;
     }
-    .infoPresentaion {
-        padding-bottom: 100px;
-        width: 100%;
-        position: relative;
-        top: 26%;
-        margin: 0px;
-        background: black;
-    }
-    .trabajoCasa {
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        margin: 0%;
-    }
-    .fotocompu {
-        width: 100%;
-    }
-    .fotocompu img{
-        width: 720px;
-        height: 200px;
-    }
-    .trabajoCasaTexto {
-        justify-content: center;
-        width: 100%;
-        display: grid;
-    }
-    .trabajoCasaTexto h1 {
-        display: block;
-        width: 100%;
-    }
-    .aboutMe {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .miPresentaion p {
+        color: rgb(0, 0, 0);
+        font-size: 40px;
     }
     .fotoK {
         width: 100%;
-        display: contents;
     }
-    .fotoK img {
-        margin: 5% 0%;
-        height: 400px;
+    .aboutMe {
+        flex-direction: column;
+        width: 96%;
+        margin: 0% 2%;
+    }
+    .aboutMe p {
+        font-size: 20px;
+    }
+    .boxesabout {
+        width: 100%;
+    }
+    .skils{
+        font-size: 30px;
+        text-align: initial
+    }
+    .boxes {
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+        border-radius: 250px;
+    }
+    .boxes img {
+        height: 100px;
+        width: 100px;
     }
     .infoPersonal {
-        width: 100%;
+        width: 90%;
     }
-    .infoPersonal h2 {
-        margin: 0% 2% 5%;
-        text-align: center;
+    .infoPersonal h1 {
+        color: rgb(46, 44, 44);
         font-size: 40px;
     }
-    .infoPersonal p {
-        margin: 0% 2% 5%; 
-        line-height: 40px;
+    .infoPersonal h2 {
+        font-size: 30px;
     }
-    .proyectosKaty {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    .containerbtn {
+        justify-content: center;
+    }
+    .btn-descarga{
+        width: 236px;
+        padding: 18px;
+        font-size: 25px;
+        color: black;
+    }
+    .tittleservices {
+        align-items: flex-start;
+    }
+    .tittleservices h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+    .boxesSevices {
         width: 100%;
-        height: 36%;
+        padding: 0px;
+        justify-content: center;
     }
-    .proyectos {
-        display: flex;
-        flex-direction: column;
+    .titleprojects {
+        color: black;
+        font-size: 40px;
+        background: bisque;
         width: 100%;
     }
-    .textoProyecto {
-        height: 400px;
+    .titleprojects h1{
+        font-size: 40px;
     }
     .tamañoProyecto {
-        background-size: cover;
-        height: 400px;
-        margin: -10px;
+        margin: 0px;
+        height: 350px;
+        background-position-y: 20px;
+    }
+    .textoProyecto {
+        height: 350px;
     }
     .proyecto4y5 {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-    .proyectoJuego {
-        background-size: cover;
-        height: 410px;
-    }
-    .proyectoDibujo {
-        background-size: cover;
-        height: 410px;
-    }
-    .contacMe {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .boxContainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 5%;
+        height: 350px;
     }
     .container {
-        width: 46%;
-        border-radius: 34px;
+        width: 42%;
+        border-radius: 49px;
     }
-    .textContainer p {
+    .textContainer a {
+        color:black;
         font-size: 20px;
     }
 }
-    
+@media only screen and (max-width: 452px) {
+    .boxes {
+        width: 70px;
+    }
+    .boxes img {
+        height: 70px;
+        width: 70px;
+    }
+}
