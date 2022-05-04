@@ -8,6 +8,7 @@ h1 {
     color: white;
 }
 p {
+    font-family: 'Fira Sans', sans-serif;
     color: white;
 }
 body{
@@ -69,7 +70,11 @@ header:hover {
     width: 40%;
     margin: 15% 0% 10% 20%;
 }
+.frondDevelo p {
+    color: gainsboro;
+}
 .kathe {
+    font-family: 'Radio Canada', sans-serif;
     font-size: 30px;
 }
 .fotoK {
@@ -130,6 +135,7 @@ header:hover {
     width: 50%;
 }
 .infoPersonal h2 {
+    font-family: 'Radio Canada', sans-serif;
     color: rgb(46, 44, 44);
 }
 .containerbtn {
@@ -158,6 +164,7 @@ header:hover {
     margin-left: 10%;
 }
 .tittleservices h1 {
+    font-family: 'Radio Canada', sans-serif;
     color: black
 }
 .tittleservices p{
@@ -190,6 +197,7 @@ header:hover {
 }
 .boxes2 h1{
     color: black;
+    font-family: 'Radio Canada', sans-serif;
     font-size: 40px;
 }
 .boxes2 p {
@@ -201,6 +209,7 @@ header:hover {
     width: 200px;
 }
 .titleprojects h1{
+    font-family: 'Bebas Neue', cursive;
     color:black;
 }
 .proyectosKaty {
@@ -231,7 +240,11 @@ header:hover {
 .textoProyecto:hover {
     opacity: 1;
 }
+.textoProyecto h1 {
+    font-family: 'Radio Canada', sans-serif;
+}
 .textoProyecto p {
+    font-family: 'Fira Sans', sans-serif;
     color: rgb(255, 255, 255);
 }
 .textoProyecto a {
@@ -287,6 +300,7 @@ header:hover {
 }
 .textContact h1 {
     color: black;
+    font-family: 'Bebas Neue', cursive;
     margin-left: 10%;
 }
 .textContact p{
@@ -383,7 +397,7 @@ header:hover {
         color: white;
     }
     .miPresentaion p {
-        color: rgb(0, 0, 0);
+        color: aliceblue;
         font-size: 40px;
     }
     .fotoK {
@@ -490,6 +504,7 @@ header:hover {
     }
     .miPresentaion p {
         font-size: 30px;
+        color: aliceblue;
     }
     .fotoK img {
         height: 300px;
