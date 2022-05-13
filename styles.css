@@ -145,7 +145,6 @@ header:hover {
     align-items: center;
 }
 .btn-descarga{
-    text-decoration: none;
     display: block;
     width: 400px;
     padding: 15px;
@@ -159,20 +158,20 @@ header:hover {
 .btn-descarga:hover {
     color: white;
 }
-.tittleservices {
+.tittleeducation {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 10%;
 }
-.tittleservices h1 {
+.tittleeducation h1 {
     font-family: 'Radio Canada', sans-serif;
     color: black
 }
-.tittleservices p{
+.tittleeducation p{
     color: rgb(46, 44, 44);
 }
-.boxesSevices {
+.boxesEducation {
     width: 97%;
     display: flex;
     flex-wrap: wrap;
@@ -180,15 +179,16 @@ header:hover {
     align-items: center;
 }
 .boxes2 {
-    width: 300px;
-    height: 300x;
+    width: 400px;
+    height: 400px;
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    overflow: hidden;
     align-items: center;
     margin: 1%;
-    border-radius: 200px;
+    border-radius: 50px;
     transition: all 0.5s;
 }
 .boxes2:hover {
@@ -197,18 +197,47 @@ header:hover {
 .boxes:hover {
     background-color: antiquewhite;
 }
-.boxes2 h1{
-    color: black;
-    font-family: 'Radio Canada', sans-serif;
-    font-size: 40px;
+.temasedu {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: space-evenly;
 }
-.boxes2 p {
+.temasedu li{
+    list-style-type: disclosure-closed;
     color: rgb(46, 44, 44);
     font-size: 20px;
 }
-.boxes2 img {
-    height: 200px;
-    width: 200px;
+.eduIT {
+    margin-top: 30px;
+    height: 120px;
+    width: 350px;
+}
+.digitalers {
+    margin-top: 10px;
+    height: 150px;
+    width: 350px;
+}
+.freecode {
+    margin-top: 50px;
+    height: 80px;
+    width: 350px;
+}
+.certificationbtn {
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    background-color: rgba(125, 61, 189, 0.651);
+    display: flex;
+    justify-content: center;
+}
+.btn-certification {
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+.btn-certification:hover {
+    color: black;
 }
 .titleprojects h1{
     font-family: 'Bebas Neue', cursive;
@@ -298,16 +327,13 @@ header:hover {
 .contacMe {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 .textContact h1 {
     color: black;
+    align-items: center;
     font-family: 'Bebas Neue', cursive;
-    margin-left: 10%;
-}
-.textContact p{
-    color: rgb(46, 44, 44);
-    margin-left: 10%;
 }
 .boxContainer {
     display: flex;
@@ -317,8 +343,8 @@ header:hover {
     margin-bottom: 5%;
 }
 .container {
-    width: 40%;
-    margin: 1% 2%;
+    width: 30%;
+    margin: 1% 0%;
     display: flex;
     border-radius: 50px;
     padding: 7px;
@@ -414,6 +440,7 @@ header:hover {
         font-size: 20px;
     }
     .boxesabout {
+        margin-left: -50px;
         width: 100%;
     }
     .skils{
@@ -450,10 +477,10 @@ header:hover {
         font-size: 25px;
         color: white;
     }
-    .tittleservices {
+    .tittleeducation {
         align-items: flex-start;
     }
-    .tittleservices h1 {
+    .tittleeducation h1 {
         font-size: 40px;
         margin-bottom: 0px;
     }
@@ -517,7 +544,7 @@ header:hover {
         margin: 0% 0% 10%;
     }
     .boxesabout {
-        margin: 0px 0px 0px -32px;
+        margin: 10px 0px 0px -32px;
     }
     .boxesabout li{
         margin: 0px 0px 0px -15px;
@@ -535,6 +562,17 @@ header:hover {
     .boxes2:hover {
         background: white;
         box-shadow: 0px 15px 20px 9px rgba(0, 0, 0, 0);
+    }
+    .boxesEducation {
+        justify-content: center;
+        width: 100%;
+        margin-left: -10%;
+    }
+    .btn-certification {
+        font-size: 24px;
+    }
+    .freecode {
+        height: 60px;
     }
     .tamañoProyecto {
         background-size: 115%;
@@ -555,11 +593,20 @@ header:hover {
     .contacMe { 
         margin-top: -36%;
     }
+    .boxContainer {
+        justify-content: center;
+    }
     .textContainer a {
         font-size: 16px;
     }
+    .container {
+        width: 70%;
+        border-radius: 49px;
+        justify-content: flex-start;
+    }
     .container img {
-        height: 20px;
-        width: 20px;
+        height: 40px;
+        width: 40px;
+        margin: 0px 20px 0px 15px;
     }
 }
