@@ -24,7 +24,6 @@ p {
     height: 200px;
     width: 400px;
 }
-
 header{
     background: rgba(125, 61, 189, 0.342);
     width: 100%;
@@ -479,6 +478,9 @@ header:hover {
         display: none;
     }
     .appear {
+        display: flex;
+    }
+    .navResponsive {
         display: flex;
     }
     .navPhone {
