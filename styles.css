@@ -11,6 +11,9 @@ p {
     font-family: 'Fira Sans', sans-serif;
     color: white;
 }
+.hidden {
+    display: none;
+}
 body{
     display: flex;
     flex-direction: column;
@@ -66,11 +69,52 @@ header:hover {
     align-items: center;
     justify-content: center;
 }
+.fondoInfoKathe {
+    clip-path: polygon(0% -484px, 100% 55%, 195% -175%, 0px 297%);
+    padding: 1% 30% 1% 35%;
+    box-shadow: -254px 19px 40px 20px rgb(0 0 0 / 75%);
+    background: linear-gradient(to right, rgb(36, 7, 65) , rgb(106, 37, 175));
+    width: 100%;
+    margin-left: -57%;
+}
+.fade-in-scroll{
+    animation: fadeInScroll 4s;
+}
+@keyframes fadeInScroll {
+    from {
+        position: relative;
+        transform: translateX(-100%);
+        opacity: 0.5;
+        transition: all 0.2s linear;
+    }
+    top {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.fadeIn {
+    position: relative;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.fadeIn.active {
+    opacity: 1;
+}
+.reveal{
+    position: relative;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 2s ease;
+}
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
 .miPresentaion {
     width: 40%;
     margin: 15% 0% 10% 20%;
 }
-.frondDevelo p {
+.katheFrondEnd p {
     color: gainsboro;
 }
 .kathe {
@@ -94,11 +138,9 @@ header:hover {
     width: 90%;
     margin: 0% 5%;
 }
-.aboutMe .who{
-    font-size: 40px;
-}
 .aboutMe p{
     color: rgb(46, 44, 44);
+    font-weight: 100;
 }
 .boxesabout {
     width: 50%;
@@ -113,7 +155,7 @@ header:hover {
     color: black;
     font-weight: bold;
 }
-.boxes {
+.boxesA {
     width: 300px;
     height: 300px;
     display: flex;
@@ -124,10 +166,10 @@ header:hover {
     border-radius: 350px;
     transition: all 0.5s;
 }
-.boxes:hover {
+.boxesA:hover {
     background-color: antiquewhite;
 }
-.boxes img {
+.boxesA img {
     height: 200px;
     width: 200px;
 }
@@ -137,6 +179,7 @@ header:hover {
 .infoPersonal h2 {
     font-family: 'Radio Canada', sans-serif;
     color: rgb(46, 44, 44);
+    font-size: 40px;
 }
 .containerbtn {
     width: 100%;
@@ -158,11 +201,13 @@ header:hover {
 .btn-descarga:hover {
     color: white;
 }
-.tittleeducation {
+#education {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 10%;
+    align-items: center;
+    text-align: center;
 }
 .tittleeducation h1 {
     font-family: 'Radio Canada', sans-serif;
@@ -171,14 +216,15 @@ header:hover {
 .tittleeducation p{
     color: rgb(46, 44, 44);
 }
-.boxesEducation {
-    width: 97%;
+.cardsEducation {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 0;
 }
-.boxes2 {
+.cardsEdu {
     width: 400px;
     height: 400px;
     display: flex;
@@ -187,41 +233,62 @@ header:hover {
     justify-content: space-between;
     overflow: hidden;
     align-items: center;
-    margin: 1%;
+    margin: 5%;
     border-radius: 50px;
     transition: all 0.5s;
 }
-.boxes2:hover {
+.cardsEdu:hover {
     box-shadow: 0px 15px 20px 9px rgba(0, 0, 0, 0.164);
 }
-.boxes:hover {
+.boxesA:hover {
     background-color: antiquewhite;
 }
 .temasedu {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: 50%;
     justify-content: space-evenly;
 }
+.partsOf-PI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.partsOf-PI h1 {
+    margin: 0;
+}
+.temasedu h1{
+    color: rgb(46, 44, 44);
+    font-size: 24px;
+}
+.temasedu ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 90%;
+}
 .temasedu li{
-    list-style-type: disclosure-closed;
+    list-style-type: disc;
     color: rgb(46, 44, 44);
     font-size: 20px;
+    font-weight: 100;
 }
-.eduIT {
-    margin-top: 30px;
-    height: 120px;
-    width: 350px;
-}
-.digitalers {
+.cardsEdu img {
     margin-top: 10px;
-    height: 150px;
-    width: 350px;
+    height: 35%;
+    width: 90%;
 }
-.freecode {
+.cardsEdu .eduit {
+    margin-top: 30px;
+    height: 15%;
+    width: 90%;
+}
+.cardsEdu .freecode {
     margin-top: 50px;
-    height: 80px;
-    width: 350px;
+    height: 20%;
+    width: 90%;
 }
 .certificationbtn {
     width: 100%;
@@ -352,19 +419,18 @@ header:hover {
     justify-content: space-evenly;
     align-items: center;
 }
-.textContainer a{
-    text-decoration: none;
+.textContainer p{
     color: wheat;
     transition: all 0.4s;
 }
-.textContainer a:hover {
+.textContainer p:hover {
     color: black;
 }
 @media only screen and (max-width: 1440px) {
-    .boxes {
+    .boxesA {
         width: 200px;
     }
-    .boxes img {
+    .boxesA img {
         height: 200px;
         width: 200px;
     }
@@ -377,12 +443,19 @@ header:hover {
         width: 100%;
         margin: 0% 0%;
     }
-    .boxes {
+    .boxesA {
         width: 155px;
     }
-    .boxes img {
+    .boxesA img {
         height: 150px;
         width: 150px;
+    }
+    .container img {
+        height: 30px;
+        width: 30px;
+    }
+    .textContainer p {
+        font-size: 20px;
     }
 }
 @media only screen and (max-width: 768px){
@@ -398,6 +471,53 @@ header:hover {
     }
     .nav {
         display: none;
+    }
+    .appear {
+        display: flex;
+    }
+    .navPhone {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        margin: 0;
+        background-color: rgba(80, 32, 128, 0.99);
+        border-radius: 0px 0px 0px 100px;
+        padding: 0%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 45%;
+    }
+    .navPhone li {
+        margin: 30%;
+        list-style: none;
+    }
+    .navPhone li a {
+        text-decoration: none;
+        font-size: 24px;
+        color: white;
+    }
+    .menu-icon img {
+        position: absolute;
+        height: 80px;
+        border-radius: 24px;
+        width: 80px;
+        top: 7px;
+        right: 25px;
+    }
+    .menu-scroll{
+        animation: menuScroll 1s;
+    }
+    @keyframes menuScroll {
+        from {
+            position: relative;
+            transform: translateX(100%);
+            opacity: 0.5;
+            transition: all 0.2s linear;
+        }
+        top {
+            opacity: 1;
+            transform: translateX(0%);
+        }
     }
     .logo {
         margin-left: -20%;
@@ -428,6 +548,26 @@ header:hover {
         color: aliceblue;
         font-size: 40px;
     }
+    .fondoInfoKathe {
+        box-shadow: -254px 19px 40px 20px rgba(0, 0, 0, 0);
+        background: none;
+        margin: 0;
+        clip-path: none;
+        padding: 0% 0% 0% 0%;
+    }
+    .fade-in-scroll{
+        animation: fadeInScroll 0s;
+    }
+    @keyframes fadeInScroll {
+        from {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        top {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
     .fotoK {
         width: 100%;
     }
@@ -447,13 +587,13 @@ header:hover {
         font-size: 30px;
         text-align: initial
     }
-    .boxes {
+    .boxesA {
         width: 100px;
         height: 100px;
         background-color: antiquewhite;
         border-radius: 250px;
     }
-    .boxes img {
+    .boxesA img {
         height: 100px;
         width: 100px;
     }
@@ -484,6 +624,9 @@ header:hover {
         font-size: 40px;
         margin-bottom: 0px;
     }
+    .cardsEdu {
+        box-shadow: 0px 15px 20px 9px rgba(0, 0, 0, 0.164);
+    }
     .boxesSevices {
         width: 100%;
         padding: 0px;
@@ -513,15 +656,25 @@ header:hover {
         width: 42%;
         border-radius: 49px;
     }
-    .textContainer a {
+    .container img {
+        height: 30px;
+        width: 30px;
+    }
+    .textContainer p {
         color:black;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width: 452px) {
     .logo img {
         height: 60px;
         width: 65px;
+    }
+    .menu-icon img {
+        height: 60px;
+        width: 60px;
+        border-radius: 20px;
+        top: 0;
     }
     .miPresentaion {
         margin: 5% 0% 0% 0%;
@@ -549,19 +702,15 @@ header:hover {
     .boxesabout li{
         margin: 0px 0px 0px -15px;
     }
-    .boxes p {
+    .boxesA p {
         display: none;
     }
-    .boxes {
+    .boxesA {
         width: 90px;
     }
-    .boxes img {
+    .boxesA img {
         height: 65px;
         width: 65px;
-    }
-    .boxes2:hover {
-        background: white;
-        box-shadow: 0px 15px 20px 9px rgba(0, 0, 0, 0);
     }
     .boxesEducation {
         justify-content: center;
