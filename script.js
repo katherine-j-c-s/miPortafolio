@@ -54,41 +54,22 @@ window.addEventListener("scroll", fadeIn);
 
 /////////////////LINKS DE CONTACTO//////////////////////////////////////////////////////////////////////
 
-let cambiar = false
+const abrirLink = (url) => window.open(url);
+const handleLinkEvent = (event) => {
+    const link = event.target.getAttribute("data-link");
+    console.log(link)
+    abrirLink(link)
+}
+const addLinksEvents = () => {
 
-const cambiarLink = (url) => {
+    const externalLinks = document.querySelectorAll(".externalLink");
+    console.log(externalLinks)
 
-    let cambiar = true
-
-    if (cambiar == true){
-        window.open(url)
+    for (let linkIndex = 0; linkIndex < externalLinks.length; linkIndex++) {
+        const linkElement = externalLinks[linkIndex];
+        console.log(linkElement)
+        linkElement.addEventListener("click", handleLinkEvent)
     }
 }
 
-//////////////GITHUB//////////////////////////////////////////
-const linkGithub = () => {
-
-    let githubURL = document.querySelector("#github").getAttribute("href")
-
-    cambiarLink(githubURL)
-
-}
-linkGithub()
-//////////////LINKELIN//////////////////////////////////////////
-const linkLinkelin = () => {
-
-    let linkelinURL = document.querySelector("#linkelin").getAttribute("href")
-
-    cambiarLink(linkelinURL)
-
-}
-linkLinkelin()
-//////////////GMAIL//////////////////////////////////////////
-const linkGmail = () => {
-
-    let gmail = document.querySelector("#gmail").getAttribute("href")
-
-    cambiarLink(gmail)
-
-}
-linkGmail()
+addLinksEvents()
