@@ -83,7 +83,7 @@ header:hover {
     margin-left: -57%;
 }
 .fade-in-scroll{
-    animation: fadeInScroll 4s;
+    animation: fadeInScroll 2s;
 }
 @keyframes fadeInScroll {
     from {
@@ -692,6 +692,7 @@ header:hover {
     }
     .miPresentaion .kathe {
         font-size: 35px;
+        margin-top: 20%;
     }
     .miPresentaion p {
         font-size: 30px;
