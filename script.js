@@ -1,24 +1,16 @@
 /////////// MENU TELEFONO//////////////////////////////////////////////////////////////////////////////////
-let isMenuClosed = true;
 const menuPhone = document.querySelector(".menu-icon");
 const iconBurguer = document.querySelector(".open");
 const iconCross = document.querySelector(".close");
 const opciones = document.querySelector(".opciones");
 
-menuPhone.addEventListener("click", abrirMenu = () => {
-    console.log(isMenuClosed)
-    if (isMenuClosed){
-        iconCross.classList.remove("hidden");
-        iconBurguer.classList.remove("appear");
-        opciones.classList.remove("hidden");
-        isMenuClosed = false;
-    }else{
-        iconCross.classList.add("hidden");
-        iconBurguer.classList.add("appear");
-        opciones.classList.add("hidden");
-        isMenuClosed = true;
-    }
-})
+const abrirMenu = () => {
+    iconCross.classList.toggle("hidden");
+    iconBurguer.classList.toggle("appear");
+    opciones.classList.toggle("hidden");
+}
+
+menuPhone.addEventListener("click", abrirMenu)
 
 ///////////// EFECTOS DE ANIMACION//////////////////////////////////////////////////////////////////////////
 const reveal = () => {

@@ -3,6 +3,11 @@
     font-size: 25px;
     font-weight: bold;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
 h1 {
     font-size: 40px;
     color: white;
@@ -14,11 +19,12 @@ p {
 .hidden {
     display: none;
 }
-body{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
+.backgroundToggle {
+    color: aqua;
+    height: 200px;
+    width: 400px;
 }
+
 header{
     background: rgba(125, 61, 189, 0.342);
     width: 100%;
