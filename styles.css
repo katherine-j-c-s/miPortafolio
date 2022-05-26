@@ -146,6 +146,7 @@ header:hover {
 .aboutMe p{
     color: rgb(46, 44, 44);
     font-weight: 100;
+    text-align: justify;
 }
 .boxesabout {
     width: 50%;
@@ -279,6 +280,7 @@ header:hover {
     color: rgb(46, 44, 44);
     font-size: 20px;
     font-weight: 100;
+    text-align: initial;
 }
 .cardsEdu img {
     margin-top: 10px;
@@ -586,6 +588,7 @@ header:hover {
     }
     .aboutMe p {
         font-size: 20px;
+        text-align: center;
     }
     .boxesabout {
         margin-left: -50px;
