@@ -50,24 +50,19 @@ const fadeIn = () => {
     }
 }
 window.addEventListener("scroll", fadeIn);
-
-
 /////////////////LINKS DE CONTACTO//////////////////////////////////////////////////////////////////////
 
 const abrirLink = (url) => window.open(url);
 const handleLinkEvent = (event) => {
     const link = event.target.getAttribute("data-link");
-    console.log(link)
     abrirLink(link)
 }
 const addLinksEvents = () => {
 
     const externalLinks = document.querySelectorAll(".externalLink");
-    console.log(externalLinks)
 
     for (let linkIndex = 0; linkIndex < externalLinks.length; linkIndex++) {
         const linkElement = externalLinks[linkIndex];
-        console.log(linkElement)
         linkElement.addEventListener("click", handleLinkEvent)
     }
 }
