@@ -53,14 +53,24 @@ window.addEventListener("scroll", fadeIn);
 /////////////////LINKS DE CONTACTO//////////////////////////////////////////////////////////////////////
 
 const abrirLink = (url) => window.open(url);
-const handleLinkEvent = (event) => {
+const handleLinkEvent = (event, element) => {
     const link = event.target.getAttribute("data-link");
+    if (link == null) {
+        const textLink = element.target.clickedTextElement()
+        abrirLink(textLink)
+    }
     abrirLink(link)
+}
+const clickedTextElement = () => {
+    const textElement = document.querySelectorAll(".textoClick");
+    for (let element = 0; element < textElement.length; element++) {
+        const classElement = textElement[element];
+        classElement.getAttribute("href")
+    }
 }
 const addLinksEvents = () => {
 
     const externalLinks = document.querySelectorAll(".externalLink");
-
     for (let linkIndex = 0; linkIndex < externalLinks.length; linkIndex++) {
         const linkElement = externalLinks[linkIndex];
         linkElement.addEventListener("click", handleLinkEvent)
