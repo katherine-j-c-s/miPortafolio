@@ -441,11 +441,12 @@ header:hover {
     align-items: center;
     cursor: pointer;
 }
-.textContainer p{
+.textContainer a{
     color: wheat;
+    text-decoration: none;
     transition: all 0.4s;
 }
-.textContainer p:hover {
+.textContainer a:hover {
     color: black;
 }
 @media only screen and (max-width: 1440px) {
@@ -476,7 +477,7 @@ header:hover {
         height: 30px;
         width: 30px;
     }
-    .textContainer p {
+    .textContainer a {
         font-size: 20px;
     }
 }
@@ -697,7 +698,7 @@ header:hover {
         height: 30px;
         width: 30px;
     }
-    .textContainer p {
+    .textContainer a {
         color:black;
         font-size: 15px;
     }
