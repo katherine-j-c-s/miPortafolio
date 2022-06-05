@@ -725,11 +725,16 @@ header:hover {
     .skils {
         margin: 0% 0% 10%;
     }
-    .boxesabout {
-        margin: 10px 0px 0px -32px;
+    .aboutMe {
+        margin: 0;
+        width: 100%;
     }
     .boxesabout li{
-        margin: 0px 0px 0px -15px;
+        margin: 7% 0% 4% 0%;
+    }
+    .boxesA {
+        width: 43px;
+        height: 20px;
     }
     .boxesA img {
         height: 4rem;
@@ -802,7 +807,6 @@ header:hover {
     }
     .contacMe { 
         margin-top: 0%;
-        background: rgb(124, 65, 184);
     }
     .boxContainer {
         justify-content: center;
