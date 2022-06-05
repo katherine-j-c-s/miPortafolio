@@ -697,6 +697,13 @@ header:hover {
         border-radius: 20px;
         top: 0;
     }
+    .navPhone {
+        border-radius: 0;
+        width: 100%;
+    }
+    .navPhone li {
+        margin: 25%;
+    }
     .miPresentaion {
         margin: 5% 0% 0% 0%;
     }
@@ -724,12 +731,6 @@ header:hover {
     .boxesabout li{
         margin: 0px 0px 0px -15px;
     }
-    .boxesA p {
-        display: none;
-    }
-    .boxesA {
-        width: 90px;
-    }
     .boxesA img {
         height: 4rem;
         width: 4rem;
@@ -738,6 +739,27 @@ header:hover {
         justify-content: center;
         width: 100%;
         margin-left: -10%;
+    }
+    .cardsEdu {
+        width: 100%;
+        box-shadow: 0px 15px 20px 9px rgb(0 0 0 / 30%);
+        margin: 0 0 5%;
+    }
+    .cardsEdu:hover {
+        box-shadow: none;
+    }
+    .cardsEdu .freecode {
+        margin: 13% 0 10%;
+    }
+    .cardsEdu .eduit {
+        margin: 30px 0 15px;
+    }
+    .temasedu {
+        margin: 0;
+        height: 55%;
+    }
+    .temasedu h1 {
+        margin: -5px 0 2%;
     }
     .btn-certification {
         font-size: 24px;
@@ -763,25 +785,24 @@ header:hover {
         background-position-y: -5px;
     }
     .textoProyecto {
-        height: 250px;
+        justify-content: space-evenly;
+        height: inherit;
     }
     .textoProyecto h1 {
         font-size: 20px;
+        margin: 0;
     }
     .textoProyecto p {
         font-size: 14px;
-    }
-    .proyectoDibujo .textoProyecto {
-        height: 200px;
-    }
-    .proyectoJuego .textoProyecto {
-        height: 200px;
+        text-align: justify;
+        margin: 6px 2% 0 2%;
     }
     .proyecto4y5 {
-        height: 200px;
+        height: 160px;
     }
     .contacMe { 
         margin-top: 0%;
+        background: rgb(124, 65, 184);
     }
     .boxContainer {
         justify-content: center;
@@ -790,8 +811,9 @@ header:hover {
         font-size: 16px;
     }
     .container {
-        width: 70%;
-        border-radius: 49px;
+        width: 80%;
+        border-radius: 40px;
+        border: 2px solid black;
         justify-content: flex-start;
     }
     .container img {
