@@ -12,7 +12,6 @@ h1 {
     color: white;
 }
 p {
-    font-family: 'Fira Sans', sans-serif;
     color: white;
 }
 .hidden {
@@ -147,7 +146,7 @@ header:hover {
 }
 .aboutMe p{
     color: rgb(46, 44, 44);
-    font-weight: 100;
+    font-weight: 500;
     text-align: justify;
 }
 .boxesabout {
@@ -164,8 +163,6 @@ header:hover {
     font-weight: bold;
 }
 .boxesA {
-    width: 300px;
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,12 +171,15 @@ header:hover {
     border-radius: 350px;
     transition: all 0.5s;
 }
+.centerbox {
+    width: 100%;
+}
 .boxesA:hover {
     background-color: antiquewhite;
 }
 .boxesA img {
-    height: 200px;
-    width: 200px;
+    height: 5rem;
+    width: 5rem;
 }
 .infoPersonal {
     width: 50%;
@@ -450,13 +450,7 @@ header:hover {
     color: black;
 }
 @media only screen and (max-width: 1440px) {
-    .boxesA {
-        width: 200px;
-    }
-    .boxesA img {
-        height: 200px;
-        width: 200px;
-    }
+
 }
 @media only screen and (max-width: 1024px) {
     .fotoK img {
@@ -465,13 +459,6 @@ header:hover {
     .aboutMe {    
         width: 100%;
         margin: 0% 0%;
-    }
-    .boxesA {
-        width: 155px;
-    }
-    .boxesA img {
-        height: 150px;
-        width: 150px;
     }
     .container img {
         height: 30px;
@@ -620,10 +607,6 @@ header:hover {
         background-color: antiquewhite;
         border-radius: 250px;
     }
-    .boxesA img {
-        height: 100px;
-        width: 100px;
-    }
     .infoPersonal {
         width: 90%;
     }
@@ -748,8 +731,8 @@ header:hover {
         width: 90px;
     }
     .boxesA img {
-        height: 65px;
-        width: 65px;
+        height: 4rem;
+        width: 4rem;
     }
     .boxesEducation {
         justify-content: center;
